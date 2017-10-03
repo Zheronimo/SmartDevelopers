@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circe/CirceBold.eot');
+    src: url('../fonts/Circe/CirceBold.eot') format('embedded-opentype'),
+         url('../fonts/Circe/CirceBold.woff2') format('woff2'),
+         url('../fonts/Circe/CirceBold.woff') format('woff'),
+         url('../fonts/Circe/CirceBold.ttf') format('truetype'),
+         url('../fonts/Circe/CirceBold.svg#CirceBold') format('svg');
+}
+@font-face {
+    font-family: 'georgia';
+    src: url('../fonts/Georgia/georgia.eot');
+    src: url('../fonts/Georgia/georgia.eot') format('embedded-opentype'),
+         url('../fonts/Georgia/georgia.woff2') format('woff2'),
+         url('../fonts/Georgia/georgia.woff') format('woff'),
+         url('../fonts/Georgia/georgia.ttf') format('truetype'),
+         url('../fonts/Georgia/georgia.svg#georgia') format('svg');
+}
+@font-face {
+    font-family: 'PT_SansWebRegular';
+    src: url('../fonts/PT_Sans/PT_SansWebRegular.eot');
+    src: url('../fonts/PT_Sans/PT_SansWebRegular.eot') format('embedded-opentype'),
+         url('../fonts/PT_Sans/PT_SansWebRegular.woff2') format('woff2'),
+         url('../fonts/PT_Sans/PT_SansWebRegular.woff') format('woff'),
+         url('../fonts/PT_Sans/PT_SansWebRegular.ttf') format('truetype'),
+         url('../fonts/PT_Sans/PT_SansWebRegular.svg#PT_SansWebRegular') format('svg');
+}
+@font-face {
+    font-family: 'PT_SansWebBold';
+    src: url('../fonts/PT_Sans/PT_SansWebBold.eot');
+    src: url('../fonts/PT_Sans/PT_SansWebBold.eot') format('embedded-opentype'),
+         url('../fonts/PT_Sans/PT_SansWebBold.woff2') format('woff2'),
+         url('../fonts/PT_Sans/PT_SansWebBold.woff') format('woff'),
+         url('../fonts/PT_Sans/PT_SansWebBold.ttf') format('truetype'),
+         url('../fonts/PT_Sans/PT_SansWebBold.svg#PT_SansWebBold') format('svg');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-image: url('../img/BG.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	font-family: 'PT_SansWebRegular', sans-serif;
+	font-size: 24px;
+	color:  #2b2e35;
+}
+.wrapper {
+	max-width: 1021px;
+	width: 98%;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+/* ********HEADER********* */
+.header {
+	padding: 26px 0 27px 0;
+	margin-bottom: 52px;
+}
+.header .wrapper{
+	padding: 0 37px;
+	border-bottom: 1px solid #000;
+}
+.header .header_logo{
+	text-align: center;
+}
+.header .header_descr{
+	text-align: center;
+	font-size: 1em;
+	padding-bottom: 27px;
+}
+/* ********BANNER******** */
+.banner{
+	margin-bottom: 38px;
+}
+.banner .wrapper{
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: center;
+	        justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+.banner_title{
+	font-family: Circe;
+	color:  #ff621f;
+	font-size: 1.417em;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.banner_descr{
+	font-family: Circe;
+	color:  #020001;
+	font-size: 1.250em;
+	text-align: center;
+	margin-bottom: 27px;
+}
+.btn{
+	font-family: 'PT_SansWebBold', sans-serif;
+	color:  #ffffff;
+	font-size: 1.250em;
+	text-align: center;
+	background-color:  #ff621f;
+	padding: 20px 39px 20px 66px;
+	color: #fff;
+	border: none;
+	border-bottom: 6px solid rgba(255, 51, 42, 1);
+	-webkit-transition: all 500ms ease-in-out;
+	   -moz-transition: all 500ms ease-in-out;
+	    -ms-transition: all 500ms ease-in-out;
+	     -o-transition: all 500ms ease-in-out;
+	        transition: all 500ms ease-in-out;
+}
+.btn span{
+	font-size: 30px;
+}
+.btn:hover{
+	background-color:  rgba(255, 98, 31, 0.5);
+	-webkit-transition: all 500ms ease-in-out;
+	   -moz-transition: all 500ms ease-in-out;
+	    -ms-transition: all 500ms ease-in-out;
+	     -o-transition: all 500ms ease-in-out;
+	        transition: all 500ms ease-in-out;
+}
+/* *********INFO********* */
+.info{
+	margin-bottom: 50px;
+}
+.info .wrapper{
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+    -webkit-align-items: stretch;
+            align-items: stretch;
+}
+.information{
+	height: auto;
+	color: #fff;
+	background: #ff621f;
+	padding: 38px 20px 0 32px;
+}
+.info_date{
+	display: flex;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	
+}
+.calendar{
+	margin-right: 32px;
+	margin-bottom: 60px;
+}
+.calendar .calendar_month{
+	font-family: "PT_SansWebBold", sans-serif;
+	background: #2b2e35;
+	font-size: 0.917em;
+	text-align: center;
+}
+.calendar .calendar_day{
+	padding: 15px;
+	color: #c2c2c2;
+	font-family: "PT_SansWebBold", sans-serif;
+	font-size: 3em;
+	line-height: 73px;
+	text-align: center;
+	background: #FFF;
+}
+.date .date_day{
+	font-family: Circe;
+	font-size: 1.25em;
+	line-height: 40px;
+	text-align: left;
+	border-bottom: 2px dashed #fff;
+	margin-bottom: 20px;
+}
+.date .dayt_time{
+	width: 300px;
+	font-family: "PT_SansWebRegular", sans-serif;
+	text-align: left;
+}
+.speaker{
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+.speaker .foto {
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+    margin-bottom: 25px;
+}
+.speaker .descr{
+	font-family: "georgia", sans-serif;
+	font-style: italic;
+	font-size: 0.917em;
+	margin-bottom: 20px;
+}
+.speaker .name{
+	font-family: "PT_SansWebBold", sans-serif;
+	font-size: 0.917em;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.speaker_list{
+	padding: 0 53px 0 60px;
+	font-family: "PT_SansWebregular", sans-serif;
+	font-size: 0.750em;
+}
+.speaker_list li{
+	margin-bottom: 25px;
+}
+.info_content{
+	padding: 38px 23px 0 38px;
+	background: #eaeaea;
+}
+.info_content-list{
+	height: auto;
+}
+.list_title{
+	display: inline-block;
+	font-size: 1em;
+	margin-bottom: 70px;
+	text-transform: uppercase;
+}
+.info_content-list ul{
+	padding: 0 30px 0 77px;
+	list-style: none;
+}
+.info_content-list li{
+	position: relative;
+	margin-bottom: 45px;
+	display: inline-block;
+}
+.info_content-list li::before{
+	content: "\f00c";
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 1em;
+	color: #d80027;
+	position: absolute;
+	top: 0;
+	left: -40px;
+}
